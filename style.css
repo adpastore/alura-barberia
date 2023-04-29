@@ -20,7 +20,7 @@ p{
     background: #CCCCCC;
 }
 
-em strong{  /* Selector de etiquetas*/
+em strong{  /* Selector de etiquetas, la etiqueta es: em*/
     color:red;
 }
 
