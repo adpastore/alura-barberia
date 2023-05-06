@@ -23,43 +23,39 @@
     <main>
       <form action="">
         <label for="nombreapellido">Nombre y Apellido</label>
-        <input type="text" id="nombreapellido" />
+        <input type="text" id="nombreapellido" class="input-padron"/>
 
         <label for="correoelectronico">Correo electrónico</label>
-        <input type="text" id="correoelectronico" />
+        <input type="text" id="correoelectronico" class="input-padron"/>
 
         <label for="telefono">Teléfono</label>
-        <input type="text" id="telefono" />
+        <input type="text" id="telefono" class="input-padron"/>
 
         <label for="mensaje">Mensaje</label>
-        <textarea id="mensaje" cols="65" rows="10"></textarea>
+        <textarea id="mensaje" cols="65" rows="10" class="input-padron"></textarea>
 
         <div>
           <p>Cómo le gustaría que lo contactemos?</p>
 
+        <!-- De esta manera el "circulo radio" se ubica después del texto.
           <label for="radio-email">Email</label>
           <input type="radio" name="contacto" value="email" id="radio-email" />
+          Así se ubica antes:
+          <label for="radio-email"></label><input type="radio" name="contacto" value="email" id="radio-email"/>Email</label>
+        -->
+        <!--  Al agregarle name="contacto" a los 3, le indico que son del mismo grupo, y sólo uno puede ser seleccionado -->
 
-          <label for="radio-telefono">Teléfono</label>
-          <input
-            type="radio"
-            name="contacto"
-            value="telefono"
-            id="radio-telefono"
-          />
+        <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email"/>Email</label>
+          
 
-          <!--  Al agregarle name="contacto" a los 3, le indico que son del mismo grupo, y sólo uno puede ser seleccionado -->
-
-          <label for="radio-whatsapp">WhatsApp</label>
-          <input
-            type="radio"
-            name="contacto"
-            value="whatsapp"
-            id="radio-whatsapp"
-          />
+        <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono"/>Teléfono</label>
+        
+        <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp"
+        id="radio-whatsapp"/>WhatsApp</label>
+          
         </div>
 
-        <label><input type="checkbox">Le gustaría recibir novedades de la Barbería Alura?</label>
+        <label class="checkbox"><input type="checkbox">Le gustaría recibir novedades de la Barbería Alura?</label>
 
         <input type="submit" value="Enviar Formulario" />
       </form>
