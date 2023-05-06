@@ -1,0 +1,49 @@
+.titulo-principal{
+    padding-left: 30px; /*Espaciamiento interno*/
+}
+
+#banner{
+    width: 100%;
+}
+
+.principal{
+    background: #CCCCCC;
+    padding: 20px; /* espaciado alrededor del bloque*/
+}
+.titulo-centralizado{
+    text-align: center; 
+    
+}
+
+p{
+    text-align: center;
+    background: #CCCCCC;
+}
+
+em strong{  /* Selector de etiquetas, la etiqueta es: em*/
+    color:red;
+}
+
+#mision{ /* Selector de identificadores */
+    font-size: 20px;
+}
+
+.diferenciales{ /* Selector de clase*/
+    background: #ffffff;
+    padding: 30px;
+    
+}
+/*Estilo de letra*/
+.items{
+    font-style: italic;
+}
+ul{
+    display: inline-block; /* que ocupe sólo el espacio que tiene de largo*/
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
+.imagendiferenciales{
+    width: 50%;
+}
