@@ -21,21 +21,55 @@
       </div>
     </header>
     <main>
-        <form action="">
-            <label for="nombreapellido">Nombre y Apellido</label>
-            <input type="text" id="nombreapellido">
-            <label for="correoelectronico">Correo electrónico</label>
-            <input type="text" id="correoelectronico">
-            <label for="telefono">Teléfono</label>
-            <input type="text" id="telefono">
-            <input type="submit" value="Enviar Formulario" name="" id="">
-        </form>
-        
+      <form action="">
+        <label for="nombreapellido">Nombre y Apellido</label>
+        <input type="text" id="nombreapellido" />
 
+        <label for="correoelectronico">Correo electrónico</label>
+        <input type="text" id="correoelectronico" />
+
+        <label for="telefono">Teléfono</label>
+        <input type="text" id="telefono" />
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" cols="65" rows="10"></textarea>
+
+        <div>
+          <p>Cómo le gustaría que lo contactemos?</p>
+
+          <label for="radio-email">Email</label>
+          <input type="radio" name="contacto" value="email" id="radio-email" />
+
+          <label for="radio-telefono">Teléfono</label>
+          <input
+            type="radio"
+            name="contacto"
+            value="telefono"
+            id="radio-telefono"
+          />
+
+          <!--  Al agregarle name="contacto" a los 3, le indico que son del mismo grupo, y sólo uno puede ser seleccionado -->
+
+          <label for="radio-whatsapp">WhatsApp</label>
+          <input
+            type="radio"
+            name="contacto"
+            value="whatsapp"
+            id="radio-whatsapp"
+          />
+        </div>
+
+        <label><input type="checkbox">Le gustaría recibir novedades de la Barbería Alura?</label>
+
+        <input type="submit" value="Enviar Formulario" />
+      </form>
     </main>
     <footer>
-        <img src="../Barberia/imagenes/imagenes/logo-blanco.png" alt="LogoBlanco">
-          <p class="copyright">&copy Copyright Barberia Alura - 2023</p>
-      </footer>
-    </body>
+      <img
+        src="../Barberia/imagenes/imagenes/logo-blanco.png"
+        alt="LogoBlanco"
+      />
+      <p class="copyright">&copy Copyright Barberia Alura - 2023</p>
+    </footer>
+  </body>
 </html>

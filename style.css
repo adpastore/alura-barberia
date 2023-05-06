@@ -109,6 +109,6 @@ form label{
 form input{
     display: block;
     margin: 0 0 20px;
-    padding: 10px 25px;
+    padding: 10px 25px; /*Altura de los sectores para ingresar texto*/
     width: 50%;
 }
