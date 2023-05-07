@@ -10,7 +10,7 @@
   <body>
     <header>
       <div class="caja">
-        <h1><img src="imagenes/imagenes/logo.png" alt="logo" /></h1>
+        <h1><img src="imagenes/imagenes/logo.png" alt="Logo de la Barberia Alura" /></h1>
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
@@ -59,10 +59,12 @@
           required
           placeholder="Buen día, adelántenos la razón de su contacto."
         ></textarea>
-
-        <div>
-          <p>¿Cómo le gustaría que lo contactemos?</p>
-
+        <!-- fielset indica a html que sus componentes son parte de o mismo-->
+        <fieldset>
+          <legend>
+            ¿Cómo le gustaría que lo contactemos?
+          </legend>
+          
           <!-- De esta manera el "circulo radio" se ubica después del texto.
           <label for="radio-email">Email</label>
           <input type="radio" name="contacto" value="email" id="radio-email" />
@@ -98,17 +100,19 @@
               checked
             />WhatsApp</label
           >
-        </div>
+        </fieldset>
 
-        <div>
-          <p>¿En cuál horario prefiere ser atendido?</p>
+        <fieldset>
+          <legend>
+            ¿En cuál horario prefiere ser atendido?
+          </legend>
           <select>
             <!-- Cuadro descendente-->
             <option>Mañana</option>
             <option>Tarde</option>
             <option>Noche</option>
           </select>
-        </div>
+        </fieldset>
 
         <label class="checkbox"
           ><input 
@@ -128,7 +132,7 @@
     <footer>
       <img
         src="../Barberia/imagenes/imagenes/logo-blanco.png"
-        alt="LogoBlanco"
+        alt="Logo de la Barberia Alura"
       />
       <p class="copyright">&copy Copyright Barberia Alura - 2023</p>
     </footer>
