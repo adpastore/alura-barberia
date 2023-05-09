@@ -81,7 +81,7 @@ nav a:hover {
 
 footer {
   text-align: center;
-  background: url(../Barberia/imagenes/imagenes/bg.jpg);
+  background: url(../Barberia/imagenes/bg.jpg);
   padding: 40px;
 }
 
@@ -161,6 +161,7 @@ th {
     text-align: center;
     font-size: 2em; /*2em 2 veces el tamaño de texto de la pagina*/
     margin: 0 0 1em;
+    clear: left;
 }
 
 .principal p{
@@ -174,6 +175,12 @@ th {
 
 .principal em{
     font-style: italic;
+}
+
+.utensillos{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
 }
 
 .imagenDiferenciales{
