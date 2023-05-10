@@ -95,15 +95,11 @@ footer {
   margin: 20px;
 }
 
-main {
-  width: 940px;
-  margin: 0 auto;
-} /* 0 para arriba/abajo y auto a los costados.*/
-
 form {
   /*margen sup/inf: 40px - costados 0*/
   margin: 40px 0;
 }
+
 form label,
 form legend {
   display: block;
@@ -161,6 +157,13 @@ th {
     width: 100%;
 }
 
+.principal{
+  padding: 3em 0;
+  background: #FEFEFE;
+  width: 940px;
+  margin: 0 auto;
+}
+
 .titulo-principal{
     text-align: center;
     font-size: 2em; /*2em 2 veces el tamaño de texto de la pagina*/
@@ -170,7 +173,7 @@ th {
 
 .principal p{
     margin: 0 0 1em;
-
+  
 }
 
 .principal strong{
@@ -189,11 +192,22 @@ th {
 
 .mapa{
   padding: 3em 0;
+  background: linear-gradient(#FEFEFE, #888888);
 }
 
 .mapa p{
   margin: 0 0 2em;
   text-align: center;
+}
+
+.mapa-contenido{
+  width: 940px;
+  margin: 0 auto;
+}
+
+.diferenciales{
+  padding: 3em 0;
+  background: #888888;
 }
 
 .contenido-diferenciales{
@@ -209,6 +223,10 @@ th {
 
 .items{
   line-height: 1.5;
+}
+
+.items:first-child{
+  font-weight: bold;
 }
 
 .imagen-diferenciales{
