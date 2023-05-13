@@ -33,6 +33,11 @@ nav a {
   text-decoration: none;
 }
 
+nav a:hover{
+  color: #c78c19;
+  text-decoration: underline;
+}
+
 .productos {
   width: 940px;
   margin: 0 auto;
@@ -78,11 +83,6 @@ nav a {
   margin-top: 10px;
 }
 
-nav a:hover {
-  color: #c78c19;
-  text-decoration: underline;
-}
-
 footer {
   text-align: center;
   background: url(../Barberia/imagenes/bg.jpg);
@@ -94,10 +94,15 @@ footer {
   font-size: 13px;
   margin: 20px;
 }
-
+/*
+main{
+  width: 940px;
+  margin: 0 auto;    
+}
+*/
 form {
   /*margen sup/inf: 40px - costados 0*/
-  margin: 40px 0;
+  margin: 40px 30px;
 }
 
 form label,
@@ -112,6 +117,10 @@ form legend {
   margin: 0 0 20px;
   padding: 10px 25px; /*Altura de los sectores para ingresar texto*/
   width: 50%;
+}
+
+.select{
+  margin-left: auto;
 }
 
 .checkbox {
@@ -276,10 +285,33 @@ th {
   .video {
     width: 100%;
   }
+
+  form {
+    /*margen sup/inf: 40px - costados 0*/
+    margin: 0;
+    text-align: center;
+    
+  }
+  
+  form label,
+  legend {
+    display: block;
+    font-size: 40px;
+    margin: 0;
+    width: 100%;
+  }
  
-  .productos li {
+  .productos li{
     display: block;
     text-align: center;
     width: 100%;
   }
+  
+  .input-padron {
+  display: block;
+  margin: 0;
+  padding: 50px 20px 0;/* Altura de los sectores para ingresar texto*/
+  width: 100%;
+  }
+ 
 }

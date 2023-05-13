@@ -1,12 +1,19 @@
 <!DOCTYPE html>
-
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="whidth=device-width" />
     <title>Contacto - Barberia Alura</title>
     <link rel="stylesheet" href="../Barberia/reset.css" />
-    <link rel="stylesheet" href="../Barberia/style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
     <header>
       <div class="caja">
@@ -14,40 +21,41 @@
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="../Barberia/productos.html">Productos</a></li>
+            <li><a href="productos.html">Productos</a></li>
             <li><a href="contacto.html">Contacto</a></li>
           </ul>
         </nav>
       </div>
     </header>
+
     <main>
       <form action="">
         <label for="nombreapellido">Nombre y Apellido</label>
-        <input 
-          type="text" 
-          id="nombreapellido" 
-          class="input-padron" 
+        <input
+          type="text"
+          id="nombreapellido"
+          class="input-padron"
           required
           placeholder="Nombre y Apellido"
-          />
+        />
 
         <label for="correoelectronico">Correo electrónico</label>
-        <input 
-          type="email" 
-          id="correoelectronico" 
-          class="input-padron" 
+        <input
+          type="email"
+          id="correoelectronico"
+          class="input-padron"
           required
           placeholder="email@dominio.com"
-          />
+        />
 
         <label for="telefono">Teléfono</label>
-        <input 
-          type="tel" 
-          id="telefono" 
-          class="input-padron" 
+        <input
+          type="tel"
+          id="telefono"
+          class="input-padron"
           required
           placeholder="(0xx) xxxx-xxxx"
-          />
+        />
 
         <label for="mensaje">Mensaje</label>
         <textarea
@@ -61,10 +69,8 @@
         ></textarea>
         <!-- fielset indica a html que sus componentes son parte de o mismo-->
         <fieldset>
-          <legend>
-            ¿Cómo le gustaría que lo contactemos?
-          </legend>
-          
+          <legend>¿Cómo le gustaría que lo contactemos?</legend>
+
           <!-- De esta manera el "circulo radio" se ubica después del texto.
           <label for="radio-email">Email</label>
           <input type="radio" name="contacto" value="email" id="radio-email" />
@@ -103,9 +109,7 @@
         </fieldset>
 
         <fieldset>
-          <legend>
-            ¿En cuál horario prefiere ser atendido?
-          </legend>
+          <legend>¿En cuál horario prefiere ser atendido?</legend>
           <select>
             <!-- Cuadro descendente-->
             <option>Mañana</option>
@@ -115,23 +119,14 @@
         </fieldset>
 
         <label class="checkbox"
-          ><input 
-            type="checkbox"
-            checked 
-            />
-            ¿Le gustaría recibir novedades de la Barbería Alura?
-        </label
-        >
+          ><input type="checkbox" checked />
+          ¿Le gustaría recibir novedades de la Barbería Alura?
+        </label>
 
-        <input 
-          type="submit" 
-          value="Enviar Formulario"
-          class="enviar"
-          />
+        <input type="submit" value="Enviar Formulario" class="enviar" />
       </form>
 
       <table>
-
         <thead>
           <tr>
             <th>Días</th>
@@ -154,7 +149,6 @@
           </tr>
         </tbody>
       </table>
-
     </main>
     <footer>
       <img
