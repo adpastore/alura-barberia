@@ -277,7 +277,8 @@ th {
   .principal,
   .mapa-contenido,
   .contenido-diferenciales,
-  .productos {
+  .productos,
+  .contacto {
     width: auto;
   }
   .lista-diferenciales,
@@ -285,33 +286,33 @@ th {
   .video {
     width: 100%;
   }
+  .productos li{
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
 
+  /*Formulario de CONTACTOS*/
   form {
     /*margen sup/inf: 40px - costados 0*/
-    margin: 0;
+    margin: 10px;
     text-align: center;
-    
   }
   
+ 
   form label,
   legend {
     display: block;
     font-size: 40px;
     margin: 0;
-    width: 100%;
-  }
- 
-  .productos li{
-    display: block;
-    text-align: center;
-    width: 100%;
+    width: 90%;
   }
   
   .input-padron {
   display: block;
   margin: 0;
   padding: 50px 20px 0;/* Altura de los sectores para ingresar texto*/
-  width: 100%;
+  width: 95%;
   }
  
 }
