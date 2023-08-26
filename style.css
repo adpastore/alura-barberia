@@ -1,317 +1,317 @@
+/* Estilos generales */
 body {
-    font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif;
+}
+
+/* Encabezado */
+header {
+  background-color: #bbbbbb;
+  padding: 20px 0;
+}
+
+.caja {
+  width: 940px;
+  position: relative;
+  margin: 0 auto;
+}
+
+/* Navegación */
+nav {
+  position: absolute;
+  top: 110px;
+  right: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav a {
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #c78c19;
+  text-decoration: underline;
+}
+
+/* Productos */
+.productos {
+  width: 940px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.productos li {
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+  vertical-align: top;
+  margin: 0 1.5%;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  transition: border-color 0.4s;
+}
+
+/* :hover captura el momento que el mouse pasa por arriba de la imagen */
+/* :active captura el momento que el mouse hace click en la imagen */
+.productos li:hover,
+.productos li:active {
+  border-color: #c78c19;
+}
+
+.productos h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.productos li:hover h2 {
+  font-size: 33px;
+}
+
+.producto-descripcion {
+  font-size: 18px;
+}
+
+.producto-precio {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Pie de página */
+footer {
+  text-align: center;
+  background: url(../Barberia/imagenes/bg.jpg);
+  padding: 40px;
+}
+
+footer .copyright {
+  color: #ffffff;
+  font-size: 13px;
+  margin: 20px;
+}
+
+/* Formulario */
+form {
+  margin: 40px 30px;
+}
+
+form label,
+form legend {
+  display: block;
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+
+.input-padron {
+  display: block;
+  margin: 0 0 20px;
+  padding: 10px 25px;
+  width: 50%;
+}
+
+.select {
+  margin-left: auto;
+}
+
+.checkbox {
+  margin: 20px 0;
+}
+
+.enviar {
+  width: 40%;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: orange;
+  border: none;
+  border-radius: 5px;
+  transition: background 1s, transform 0.4s, cursor 0.4s;
+  cursor: pointer;
+}
+
+.enviar:hover {
+  background: darkorange;
+  transform: scale(1.2);
+}
+
+/* Tabla */
+table {
+  margin: 40px 40px;
+}
+
+thead {
+  background: #555555;
+  color: white;
+  font-weight: bold;
+}
+
+td,
+th {
+  border: 1px solid #000000;
+  padding: 8px 15px;
+}
+
+/* Imágenes y banners */
+.banner,
+.imagen-diferenciales {
+  width: 100%;
+}
+
+/* Contenido principal */
+.principal,
+.mapa-contenido,
+.contenido-diferenciales,
+.productos,
+.contacto {
+  width: 940px;
+  margin: 0 auto;
+}
+
+/* Títulos y textos */
+.titulo-principal {
+  text-align: center;
+  font-size: 2em; /*2em 2 veces el tamaño de texto de la pagina*/
+  margin: 0 0 1em;
+  clear: left;
+}
+
+p {
+  margin: 0 0 1em;
+  font-size: 1.2em;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+/* Otras secciones */
+.utensillos {
+  width: 120px;
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
+.mapa {
+  padding: 3em 0;
+  background: linear-gradient(#fefefe, #888888);
+}
+
+.mapa p {
+  margin: 0 0 2em;
+  text-align: center;
+}
+
+.diferenciales {
+  padding: 3em 0;
+  background: #888888;
+}
+
+.contenido-diferenciales {
+  width: 640px;
+  margin: 0 auto;
+}
+
+.lista-diferenciales {
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.items {
+  line-height: 1.5;
+}
+
+.items:before {
+  content: "✯";
+}
+
+.items:first-child {
+  font-weight: bold;
+}
+
+/* Efectos en imágenes */
+.imagen-diferenciales {
+  width: 60%;
+  transition: 0.4s;
+/*box-shadow: 10px 10px 20px 10px #000000, 
+		-10px -10px yellow, 
+		-15px 10px rgba(50,50,50,0.5);
+    		con cada separacion de comas, 
+		logra un nuevo efecto, 
+		en rgba el 4to param.es la opacidad*/
+  box-shadow: 10px 10px 25px 10px #000000;
+}
+
+.imagen-diferenciales:hover {
+  opacity: 0.3;
+}
+
+.video {
+  width: 560px;
+  margin: 1em auto;
+}
+
+/* Media Queries */
+@media screen and (max-width: 980px) {
+  h1 {
+    text-align: center;
   }
-  
-  header {
-    background-color: #bbbbbb;
-    padding: 20px 0;
+  ul {
+    display: list-item;
+    text-align: center;
   }
-  /* dentro de Header está la clase caja, por eso se ref con un punto */
-  .caja {
-    width: 940px;
-    position: relative;
-    margin: 0 auto;
+  li.items {
+    font-size: xx-large;
   }
-  
   nav {
-    position: absolute;
-    top: 110px;
-    right: 0;
+    position: static;
   }
-  
-  nav li {
-    display: inline;
-    margin: 0 15px;
+  .principal,
+  .mapa-contenido,
+  .contenido-diferenciales,
+  .productos,
+  .contacto {
+    width: auto;
   }
-  
-  nav a {
-    text-transform: uppercase;
-    color: #000000;
-    font-weight: bold;
-    font-size: 22px;
-    text-decoration: none;
-  }
-  
-  nav a:hover {
-    color: #c78c19;
-    text-decoration: underline;
-  }
-  
-  .productos {
-    width: 940px;
-    margin: 0 auto;
-    padding: 50px;
-  }
-  
-  .productos li {
-    display: inline-block;
-    text-align: center;
-    width: 30%;
-    vertical-align: top;
-    margin: 0 1.5%;
-    padding: 30px 20px;
-    box-sizing: border-box;
-    border: 2px solid #000000;
-    border-radius: 10px;
-  }
-  /* :hover captura el momento que el mouse pasa por arriba de la imagen */
-  .productos li:hover {
-    border-color: #c78c19;
-  }
-  /* :active captura el momento que el mouse hace click en la imagen */
-  .productos li:active {
-    border-color: #c88c19;
-  }
-  
-  .productos h2 {
-    font-size: 30px;
-    font-weight: bold;
-  }
-  
-  .productos li:hover h2 {
-    font-size: 33px;
-  }
-  
-  .producto-descripcion {
-    font-size: 18px;
-  }
-  
-  .producto-precio {
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 10px;
-  }
-  
-  footer {
-    text-align: center;
-    background: url(../Barberia/imagenes/bg.jpg);
-    padding: 40px;
-  }
-  
-  footer .copyright {
-    color: #ffffff;
-    font-size: 13px;
-    margin: 20px;
-  }
-  
-  form {
-    margin: 40px 30px;
-  }
-  
-  form label,
-  form legend {
-    display: block;
-    font-size: 20px;
-    margin: 0 0 10px;
-  }
-  
-  .input-padron {
-    display: block;
-    margin: 0 0 20px;
-    padding: 10px 25px;
-    width: 50%;
-  }
-  
-  .select {
-    margin-left: auto;
-  }
-  
-  .checkbox {
-    margin: 20px 0;
-  }
-  
-  .enviar {
-    width: 40%;
-    padding: 15px 0;
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
-    background: orange;
-    border: none;
-    border-radius: 5px;
-    transition: 1s all;
-    cursor: pointer;
-  }
-  
-  .enviar:hover {
-    background: darkorange;
-    transform: scale(1.2);
-  }
-  
-  table {
-    margin: 40px 40px;
-  }
-  
-  thead {
-    background: #555555;
-    color: white;
-    font-weight: bold;
-  }
-  
-  td,
-  th {
-    border: 1px solid #000000;
-    padding: 8px 15px;
-  }
-  
-  .banner {
+  .lista-diferenciales,
+  .imagen-diferenciales,
+  .video {
     width: 100%;
   }
-  
-  .principal {
-    padding: 3em 0;
-    background: #fefefe;
-    width: 940px;
-    margin: 0 auto;
-  }
-  
-  .principal .titulo-principal {
+  .productos li {
+    display: block;
     text-align: center;
-    font-size: 2em; /*2em 2 veces el tamaño de texto de la pagina*/
-    margin: 0 0 1em;
-    clear: left;
+    width: 100%;
   }
-  
-  .principal p {
-    margin: 0 0 1em;
-    font-size: 1.2em;
-  }
-  
-  .principal strong {
-    font-weight: bold;
-  }
-  
-  .principal em {
-    font-style: italic;
-  }
-  
-  .utensillos {
-    width: 120px;
-    float: left;
-    margin: 0 20px 20px 0;
-  }
-  
-  .mapa {
-    padding: 3em 0;
-    background: linear-gradient(#fefefe, #888888);
-  }
-  
-  .mapa .titulo-principal {
-    text-align: center;
-    font-size: 2em; /*2em 2 veces el tamaño de texto de la pagina*/
-    margin: 0 0 1em;
-    clear: left;
-  }
-
-  .mapa p {
-    margin: 0 0 2em;
+  form {
+    margin: 10px;
     text-align: center;
   }
-  
-  .mapa-contenido {
-    width: 940px;
-    margin: 0 auto;
+  form label,
+  legend {
+    display: block;
+    font-size: 40px;
+    margin: 0;
+    width: 90%;
   }
-  
-  .diferenciales {
-    padding: 3em 0;
-    background: #888888;
+  .input-padron {
+    display: block;
+    margin: 0;
+    padding: 50px 20px 0;/* Altura de los sectores para ingresar texto*/
+    width: 95%;
   }
-  .diferenciales .titulo-principal {
-    text-align: center;
-    font-size: 2em; /*2em 2 veces el tamaño de texto de la pagina*/
-    margin: 0 0 1em;
-    clear: left;
-  }
-  .contenido-diferenciales {
-    width: 640px;
-    margin: 0 auto;
-  }
-  
-  .lista-diferenciales {
-    width: 40%;
-    display: inline-block;
-    vertical-align: top;
-  }
-  
-  .items {
-    line-height: 1.5;
-  }
-  
-  .items:before {
-    content: "✯";
-  }
-  
-  .items:first-child {
-    font-weight: bold;
-  }
-  
-  .imagen-diferenciales {
-    width: 60%;
-    transition: 0.4s;
-    /*box-shadow: 10px 10px 20px 10px #000000, -10px -10px yellow, -15px 10px rgba(50,50,50,0.5);
-    con cada separacion de comas, logra un nuevo efecto, en rgba el 4to param. es la opacidad*/
-    box-shadow: 10px 10px 25px 10px #000000;
-  }
-  
-  .imagen-diferenciales:hover {
-    opacity: 0.3;
-  }
-  
-  .video {
-    width: 560px;
-    margin: 1em auto;
-  }
-  
-  @media screen and (max-width: 980px) {
-    h1 {
-      text-align: center;
-    }
-    ul {
-      display: list-item;
-      text-align: center;
-    }
-    li.items {
-      font-size: xx-large;
-    }
-    nav {
-      position: static;
-    }
-    .principal,
-    .mapa-contenido,
-    .contenido-diferenciales,
-    .productos,
-    .contacto {
-      width: auto;
-    }
-    .lista-diferenciales,
-    .imagen-diferenciales,
-    .video {
-      width: 100%;
-    }
-    .productos li {
-      display: block;
-      text-align: center;
-      width: 100%;
-    }
-  /*Formulario de CONTACTOS*/
-    form {
-      margin: 10px;
-      text-align: center;
-    }
-  
-    form label,
-    legend {
-      display: block;
-      font-size: 40px;
-      margin: 0;
-      width: 90%;
-    }
-  
-    .input-padron {
-      display: block;
-      margin: 0;
-      padding: 50px 20px 0;/* Altura de los sectores para ingresar texto*/
-      width: 95%;
-    }
-  }
+}
